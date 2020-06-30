@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = ""
 
 db = SQLAlchemy(app)
-ma = Marshmallow
+ma = Marshmallow(app)
 
 heroku = Heroku(app)
 CORS(app)
